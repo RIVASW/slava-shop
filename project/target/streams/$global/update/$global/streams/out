@@ -1,11 +1,11 @@
-[info] Updating {file:/C:/PlayProj/simple-rest-scala/project/}simple-rest-scala-build...
-[debug] :: resolving dependencies :: default#simple-rest-scala-build;0.1-SNAPSHOT
+[info] Updating {file:/C:/PlayProj/slava-shop/project/}slava-shop-build...
+[debug] :: resolving dependencies :: default#slava-shop-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
 [info] Resolving com.typesafe.play#sbt-plugin;2.3.7 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.3.7 {compile=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#sbt-plugin;2.3.7
@@ -14,17 +14,67 @@
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)]
 [info] Resolving com.typesafe.play#build-link;2.3.7 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.play#build-link;2.3.7 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.typesafe.play#build-link;2.3.7
-[debug] 	typesafe-ivy-releases: revision in cache: com.typesafe.play#build-link;2.3.7
-[debug] 	found com.typesafe.play#build-link;2.3.7 in sbt-chain
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.3.7/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.3.7/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for com.typesafe.play#build-link;2.3.7
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.3.7/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.3.7/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: no ivy file found for com.typesafe.play#build-link;2.3.7
+[debug] 		tried C:\Users\Ivan\.ivy2\local\com.typesafe.play\build-link\2.3.7\ivys\ivy.xml
+[debug] 	local: no ivy file found for com.typesafe.play#build-link;2.3.7
+[debug] 		tried http://repo1.maven.org/maven2/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.pom
+[debug] CLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.pom
+[debug] 	public: no ivy file found for com.typesafe.play#build-link;2.3.7
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.pom
+[debug] 	Typesafe repository: found md file for com.typesafe.play#build-link;2.3.7
+[debug] 		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.pom (2.3.7)
+[debug] downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.pom ...
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.pom
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.pom.sha1
+[debug] sha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.pom
+[debug] 	[SUCCESSFUL ] com.typesafe.play#build-link;2.3.7!build-link.pom(pom.original) (2130ms)
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.3.7/jars/build-link.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.3.7/jars/build-link.jar
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.3.7/jars/build-link.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.3.7/jars/build-link.jar
+[debug] 		tried C:\Users\Ivan\.ivy2\local\com.typesafe.play\build-link\2.3.7\jars\build-link.jar
+[debug] 		tried http://repo1.maven.org/maven2/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.jar
+[debug] CLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.jar
+[debug] 	found com.typesafe.play#build-link;2.3.7 in Typesafe repository
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile]
 [debug] == resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->master(*)]
 [info] Resolving com.typesafe.play#play-exceptions;2.3.7 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.play#play-exceptions;2.3.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: com.typesafe.play#play-exceptions;2.3.7
-[debug] 	typesafe-ivy-releases: revision in cache: com.typesafe.play#play-exceptions;2.3.7
-[debug] 	found com.typesafe.play#play-exceptions;2.3.7 in sbt-chain
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.3.7/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.3.7/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for com.typesafe.play#play-exceptions;2.3.7
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.3.7/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.3.7/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: no ivy file found for com.typesafe.play#play-exceptions;2.3.7
+[debug] 		tried C:\Users\Ivan\.ivy2\local\com.typesafe.play\play-exceptions\2.3.7\ivys\ivy.xml
+[debug] 	local: no ivy file found for com.typesafe.play#play-exceptions;2.3.7
+[debug] 		tried http://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.pom
+[debug] CLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.pom
+[debug] 	public: no ivy file found for com.typesafe.play#play-exceptions;2.3.7
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.pom
+[debug] 	Typesafe repository: found md file for com.typesafe.play#play-exceptions;2.3.7
+[debug] 		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.pom (2.3.7)
+[debug] downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.pom ...
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.pom
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.pom.sha1
+[debug] sha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.pom
+[debug] 	[SUCCESSFUL ] com.typesafe.play#play-exceptions;2.3.7!play-exceptions.pom(pom.original) (2086ms)
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.3.7/jars/play-exceptions.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.3.7/jars/play-exceptions.jar
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.3.7/jars/play-exceptions.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.3.7/jars/play-exceptions.jar
+[debug] 		tried C:\Users\Ivan\.ivy2\local\com.typesafe.play\play-exceptions\2.3.7\jars\play-exceptions.jar
+[debug] 		tried http://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.jar
+[debug] CLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.jar
+[debug] 	found com.typesafe.play#play-exceptions;2.3.7 in Typesafe repository
 [debug] == resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->compile]
@@ -57,9 +107,34 @@
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#routes-compiler_2.10;2.3.7 [compile->default(compile)]
 [info] Resolving com.typesafe.play#routes-compiler_2.10;2.3.7 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.play#routes-compiler_2.10;2.3.7 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.typesafe.play#routes-compiler_2.10;2.3.7
-[debug] 	typesafe-ivy-releases: revision in cache: com.typesafe.play#routes-compiler_2.10;2.3.7
-[debug] 	found com.typesafe.play#routes-compiler_2.10;2.3.7 in sbt-chain
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.3.7/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.3.7/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.7
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.3.7/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.3.7/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.7
+[debug] 		tried C:\Users\Ivan\.ivy2\local\com.typesafe.play\routes-compiler_2.10\2.3.7\ivys\ivy.xml
+[debug] 	local: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.7
+[debug] 		tried http://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.pom
+[debug] CLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.pom
+[debug] 	public: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.7
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.pom
+[debug] 	Typesafe repository: found md file for com.typesafe.play#routes-compiler_2.10;2.3.7
+[debug] 		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.pom (2.3.7)
+[debug] downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.pom ...
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.pom
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.pom.sha1
+[debug] sha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.pom
+[debug] 	[SUCCESSFUL ] com.typesafe.play#routes-compiler_2.10;2.3.7!routes-compiler_2.10.pom(pom.original) (2043ms)
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.3.7/jars/routes-compiler_2.10.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.3.7/jars/routes-compiler_2.10.jar
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.3.7/jars/routes-compiler_2.10.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.3.7/jars/routes-compiler_2.10.jar
+[debug] 		tried C:\Users\Ivan\.ivy2\local\com.typesafe.play\routes-compiler_2.10\2.3.7\jars\routes-compiler_2.10.jar
+[debug] 		tried http://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.jar
+[debug] CLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.jar
+[debug] 	found com.typesafe.play#routes-compiler_2.10;2.3.7 in Typesafe repository
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#routes-compiler_2.10;2.3.7 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#routes-compiler_2.10;2.3.7 [compile->compile]
 [debug] == resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
@@ -89,9 +164,34 @@
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->default(compile)]
 [info] Resolving com.typesafe.play#sbt-run-support_2.10;2.3.7 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.3.7 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.typesafe.play#sbt-run-support_2.10;2.3.7
-[debug] 	typesafe-ivy-releases: revision in cache: com.typesafe.play#sbt-run-support_2.10;2.3.7
-[debug] 	found com.typesafe.play#sbt-run-support_2.10;2.3.7 in sbt-chain
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.3.7/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.3.7/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.7
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.3.7/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.3.7/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.7
+[debug] 		tried C:\Users\Ivan\.ivy2\local\com.typesafe.play\sbt-run-support_2.10\2.3.7\ivys\ivy.xml
+[debug] 	local: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.7
+[debug] 		tried http://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.pom
+[debug] CLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.pom
+[debug] 	public: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.7
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.pom
+[debug] 	Typesafe repository: found md file for com.typesafe.play#sbt-run-support_2.10;2.3.7
+[debug] 		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.pom (2.3.7)
+[debug] downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.pom ...
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.pom
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.pom.sha1
+[debug] sha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.pom
+[debug] 	[SUCCESSFUL ] com.typesafe.play#sbt-run-support_2.10;2.3.7!sbt-run-support_2.10.pom(pom.original) (2089ms)
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.3.7/jars/sbt-run-support_2.10.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.3.7/jars/sbt-run-support_2.10.jar
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.3.7/jars/sbt-run-support_2.10.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.3.7/jars/sbt-run-support_2.10.jar
+[debug] 		tried C:\Users\Ivan\.ivy2\local\com.typesafe.play\sbt-run-support_2.10\2.3.7\jars\sbt-run-support_2.10.jar
+[debug] 		tried http://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.jar
+[debug] CLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.jar
+[debug] 	found com.typesafe.play#sbt-run-support_2.10;2.3.7 in Typesafe repository
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->compile]
 [debug] == resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
@@ -151,9 +251,29 @@
 [debug] == resolving dependencies org.scala-sbt#io;0.13.5->org.scalacheck#scalacheck_2.10;1.11.1 [test->default(compile)]
 [info] Resolving org.scalacheck#scalacheck_2.10;1.11.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scalacheck#scalacheck_2.10;1.11.1 {test=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: org.scalacheck#scalacheck_2.10;1.11.1
-[debug] 	typesafe-ivy-releases: revision in cache: org.scalacheck#scalacheck_2.10;1.11.1
-[debug] 	found org.scalacheck#scalacheck_2.10;1.11.1 in sbt-chain
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/org.scalacheck/scalacheck_2.10/1.11.1/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.scalacheck/scalacheck_2.10/1.11.1/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for org.scalacheck#scalacheck_2.10;1.11.1
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalacheck/scalacheck_2.10/1.11.1/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalacheck/scalacheck_2.10/1.11.1/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: no ivy file found for org.scalacheck#scalacheck_2.10;1.11.1
+[debug] 		tried C:\Users\Ivan\.ivy2\local\org.scalacheck\scalacheck_2.10\1.11.1\ivys\ivy.xml
+[debug] 	local: no ivy file found for org.scalacheck#scalacheck_2.10;1.11.1
+[debug] 		tried http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.pom
+[debug] 	public: found md file for org.scalacheck#scalacheck_2.10;1.11.1
+[debug] 		=> http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.pom (1.11.1)
+[debug] downloading http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.pom ...
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.pom
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.pom.sha1
+[debug] sha1 OK for http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.pom
+[debug] 	[SUCCESSFUL ] org.scalacheck#scalacheck_2.10;1.11.1!scalacheck_2.10.pom(pom.original) (437ms)
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/org.scalacheck/scalacheck_2.10/1.11.1/jars/scalacheck_2.10.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.scalacheck/scalacheck_2.10/1.11.1/jars/scalacheck_2.10.jar
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalacheck/scalacheck_2.10/1.11.1/jars/scalacheck_2.10.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalacheck/scalacheck_2.10/1.11.1/jars/scalacheck_2.10.jar
+[debug] 		tried C:\Users\Ivan\.ivy2\local\org.scalacheck\scalacheck_2.10\1.11.1\jars\scalacheck_2.10.jar
+[debug] 		tried http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.jar
+[debug] 	found org.scalacheck#scalacheck_2.10;1.11.1 in public
 [debug] == resolving dependencies org.scala-sbt#io;0.13.5->org.scalacheck#scalacheck_2.10;1.11.1 [test->runtime]
 [debug] == resolving dependencies org.scala-sbt#io;0.13.5->org.scalacheck#scalacheck_2.10;1.11.1 [test->compile]
 [debug] == resolving dependencies org.scalacheck#scalacheck_2.10;1.11.1->org.scala-lang#scala-library;2.10.3 [compile->master(*)]
@@ -178,17 +298,57 @@
 [debug] == resolving dependencies org.scala-sbt#io;0.13.5->org.specs2#specs2_2.10;1.12.3 [test->default(compile)]
 [info] Resolving org.specs2#specs2_2.10;1.12.3 ...
 [debug] sbt-chain: Checking cache for: dependency: org.specs2#specs2_2.10;1.12.3 {test=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: org.specs2#specs2_2.10;1.12.3
-[debug] 	typesafe-ivy-releases: revision in cache: org.specs2#specs2_2.10;1.12.3
-[debug] 	found org.specs2#specs2_2.10;1.12.3 in sbt-chain
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/org.specs2/specs2_2.10/1.12.3/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.specs2/specs2_2.10/1.12.3/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for org.specs2#specs2_2.10;1.12.3
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.specs2/specs2_2.10/1.12.3/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.specs2/specs2_2.10/1.12.3/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: no ivy file found for org.specs2#specs2_2.10;1.12.3
+[debug] 		tried C:\Users\Ivan\.ivy2\local\org.specs2\specs2_2.10\1.12.3\ivys\ivy.xml
+[debug] 	local: no ivy file found for org.specs2#specs2_2.10;1.12.3
+[debug] 		tried http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.pom
+[debug] 	public: found md file for org.specs2#specs2_2.10;1.12.3
+[debug] 		=> http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.pom (1.12.3)
+[debug] downloading http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.pom ...
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.pom
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.pom.sha1
+[debug] sha1 OK for http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.pom
+[debug] 	[SUCCESSFUL ] org.specs2#specs2_2.10;1.12.3!specs2_2.10.pom(pom.original) (431ms)
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/org.specs2/specs2_2.10/1.12.3/jars/specs2_2.10.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.specs2/specs2_2.10/1.12.3/jars/specs2_2.10.jar
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.specs2/specs2_2.10/1.12.3/jars/specs2_2.10.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.specs2/specs2_2.10/1.12.3/jars/specs2_2.10.jar
+[debug] 		tried C:\Users\Ivan\.ivy2\local\org.specs2\specs2_2.10\1.12.3\jars\specs2_2.10.jar
+[debug] 		tried http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.jar
+[debug] 	found org.specs2#specs2_2.10;1.12.3 in public
 [debug] == resolving dependencies org.scala-sbt#io;0.13.5->org.specs2#specs2_2.10;1.12.3 [test->runtime]
 [debug] == resolving dependencies org.scala-sbt#io;0.13.5->org.specs2#specs2_2.10;1.12.3 [test->compile]
 [debug] == resolving dependencies org.specs2#specs2_2.10;1.12.3->org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1 [compile->master(*)]
 [info] Resolving org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1
-[debug] 	typesafe-ivy-releases: revision in cache: org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1
-[debug] 	found org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1 in sbt-chain
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/org.specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: no ivy file found for org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1
+[debug] 		tried C:\Users\Ivan\.ivy2\local\org.specs2\specs2-scalaz-core_2.10.0-RC3\6.0.1\ivys\ivy.xml
+[debug] 	local: no ivy file found for org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1
+[debug] 		tried http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.pom
+[debug] 	public: found md file for org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1
+[debug] 		=> http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.pom (6.0.1)
+[debug] downloading http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.pom ...
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.pom
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.pom.sha1
+[debug] sha1 OK for http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.pom
+[debug] 	[SUCCESSFUL ] org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1!specs2-scalaz-core_2.10.0-RC3.pom(pom.original) (431ms)
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/org.specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/jars/specs2-scalaz-core_2.10.0-RC3.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/jars/specs2-scalaz-core_2.10.0-RC3.jar
+[debug] 		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/jars/specs2-scalaz-core_2.10.0-RC3.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/jars/specs2-scalaz-core_2.10.0-RC3.jar
+[debug] 		tried C:\Users\Ivan\.ivy2\local\org.specs2\specs2-scalaz-core_2.10.0-RC3\6.0.1\jars\specs2-scalaz-core_2.10.0-RC3.jar
+[debug] 		tried http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.jar
+[debug] 	found org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1 in public
 [debug] == resolving dependencies org.specs2#specs2_2.10;1.12.3->org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1 [compile->compile(*)]
 [debug] == resolving dependencies org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1->org.scala-lang#scala-library;2.10.0-RC3 [compile->master(*)]
 [debug] == resolving dependencies org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
@@ -2458,9 +2618,9 @@
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'runtime'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile]
@@ -4130,10 +4290,10 @@
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'test'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [test]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile]
@@ -5803,12 +5963,12 @@
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'provided'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
 [info] Resolving org.scala-sbt#sbt;0.13.5 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.13.5 {provided=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#sbt;0.13.5
@@ -6324,11 +6484,11 @@
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'optional'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'compile-internal'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [compile-internal]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [compile-internal]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile]
@@ -7997,13 +8157,13 @@
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe#webdriver_2.10;1.0.0 [compile->master]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->compile]
@@ -8303,10 +8463,10 @@
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'runtime-internal'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [runtime-internal]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [runtime-internal]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile]
@@ -9975,13 +10135,13 @@
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe#webdriver_2.10;1.0.0 [compile->master]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'test-internal'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [test-internal]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [test]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [test-internal]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile]
@@ -11650,13 +11810,13 @@
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe#webdriver_2.10;1.0.0 [compile->master]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->compile]
@@ -11956,18 +12116,18 @@
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'plugin'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [plugin]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [plugin]
 [debug] resolving dependencies for configuration 'sources'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [sources]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [sources]
 [debug] resolving dependencies for configuration 'docs'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [docs]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [docs]
 [debug] resolving dependencies for configuration 'pom'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [pom]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [pom]
 [debug] resolving dependencies for configuration 'scala-tool'
-[debug] == resolving dependencies for default#simple-rest-scala-build;0.1-SNAPSHOT [scala-tool]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile]
+[debug] == resolving dependencies for default#slava-shop-build;0.1-SNAPSHOT [scala-tool]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->default]
@@ -11985,8 +12145,8 @@
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [runtime->compile]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#jline;2.10.4 [optional->master(*)]
 [info] Resolving org.scala-lang#jline;2.10.4 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.4 {optional=[compile(*), master(*)]}
@@ -12001,18 +12161,38 @@
 [debug] 	typesafe-ivy-releases: revision in cache: org.fusesource.jansi#jansi;1.4
 [debug] 	found org.fusesource.jansi#jansi;1.4 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#jline;2.10.4->org.fusesource.jansi#jansi;1.4 [compile->compile(*)]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->default]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->runtime]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->compile]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->master]
-[debug] == resolving dependencies default#simple-rest-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->default]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->runtime]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->compile]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->master]
+[debug] == resolving dependencies default#slava-shop-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] com.typesafe.play#sbt-plugin;2.3.7!sbt-plugin.jar
-[debug] 	[NOT REQUIRED] com.typesafe.play#build-link;2.3.7!build-link.jar
-[debug] 	[NOT REQUIRED] com.typesafe.play#play-exceptions;2.3.7!play-exceptions.jar
-[debug] 	[NOT REQUIRED] com.typesafe.play#routes-compiler_2.10;2.3.7!routes-compiler_2.10.jar
-[debug] 	[NOT REQUIRED] com.typesafe.play#sbt-run-support_2.10;2.3.7!sbt-run-support_2.10.jar
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.jar
+[info] downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.jar ...
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.jar
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.jar.sha1
+[debug] sha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/build-link/2.3.7/build-link-2.3.7.jar
+[info] 	[SUCCESSFUL ] com.typesafe.play#build-link;2.3.7!build-link.jar (2309ms)
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.jar
+[info] downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.jar ...
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.jar
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.jar.sha1
+[debug] sha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.3.7/play-exceptions-2.3.7.jar
+[info] 	[SUCCESSFUL ] com.typesafe.play#play-exceptions;2.3.7!play-exceptions.jar (2077ms)
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.jar
+[info] downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.jar ...
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.jar
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.jar.sha1
+[debug] sha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/routes-compiler_2.10/2.3.7/routes-compiler_2.10-2.3.7.jar
+[info] 	[SUCCESSFUL ] com.typesafe.play#routes-compiler_2.10;2.3.7!routes-compiler_2.10.jar (4771ms)
+[debug] 		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.jar
+[info] downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.jar ...
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.jar
+[debug] 	Typesafe repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.jar.sha1
+[debug] sha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-run-support_2.10/2.3.7/sbt-run-support_2.10-2.3.7.jar
+[info] 	[SUCCESSFUL ] com.typesafe.play#sbt-run-support_2.10;2.3.7!sbt-run-support_2.10.jar (2453ms)
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)
 [debug] 	[NOT REQUIRED] org.mozilla#rhino;1.7R4!rhino.jar
 [debug] 	[NOT REQUIRED] com.google.javascript#closure-compiler;v20130603!closure-compiler.jar
@@ -12029,15 +12209,35 @@
 [debug] 	[NOT REQUIRED] com.typesafe.sbt#sbt-webdriver;1.0.0!sbt-webdriver.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#io;0.13.5!io.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#io;0.13.5!io.jar(src)
+[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.5/srcs/io-sources.jar
+[info] downloading http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.5/srcs/io-sources.jar ...
+[debug] 	typesafe-ivy-releases: downloading http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.5/srcs/io-sources.jar
+[debug] 	typesafe-ivy-releases: downloading http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.5/srcs/io-sources.jar.sha1
+[debug] sha1 OK for http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.5/srcs/io-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-sbt#io;0.13.5!io.jar(src) (2605ms)
 [debug] 	[NOT REQUIRED] org.scala-sbt#control;0.13.5!control.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar
-[debug] 	[NOT REQUIRED] org.scalacheck#scalacheck_2.10;1.11.1!scalacheck_2.10.jar
-[debug] 	[NOT REQUIRED] org.specs2#specs2_2.10;1.12.3!specs2_2.10.jar
+[debug] 		tried http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.jar
+[info] downloading http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.jar ...
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.jar
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.jar.sha1
+[debug] sha1 OK for http://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.10/1.11.1/scalacheck_2.10-1.11.1.jar
+[info] 	[SUCCESSFUL ] org.scalacheck#scalacheck_2.10;1.11.1!scalacheck_2.10.jar (1382ms)
+[debug] 		tried http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.jar
+[info] downloading http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.jar ...
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.jar
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.jar.sha1
+[debug] sha1 OK for http://repo1.maven.org/maven2/org/specs2/specs2_2.10/1.12.3/specs2_2.10-1.12.3.jar
+[info] 	[SUCCESSFUL ] org.specs2#specs2_2.10;1.12.3!specs2_2.10.jar (3207ms)
 [debug] 	[NOT REQUIRED] junit#junit;4.11!junit.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
-[debug] 	[NOT REQUIRED] org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1!specs2-scalaz-core_2.10.0-RC3.jar
+[debug] 		tried http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.jar
+[info] downloading http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.jar ...
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.jar
+[debug] 	public: downloading http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.jar.sha1
+[debug] sha1 OK for http://repo1.maven.org/maven2/org/specs2/specs2-scalaz-core_2.10.0-RC3/6.0.1/specs2-scalaz-core_2.10.0-RC3-6.0.1.jar
+[info] 	[SUCCESSFUL ] org.specs2#specs2-scalaz-core_2.10.0-RC3;6.0.1!specs2-scalaz-core_2.10.0-RC3.jar (2488ms)
 [debug] 	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar
 [debug] 	[NOT REQUIRED] org.json#json;20090211!json.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#twirl-compiler_2.10;1.0.2!twirl-compiler_2.10.jar
@@ -12183,19 +12383,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 6912ms :: artifacts dl 221ms
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT compile produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-compile.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT runtime produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-runtime.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT test produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-test.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT provided produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-provided.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT optional produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-optional.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT compile-internal produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-compile-internal.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT runtime-internal produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-runtime-internal.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT test-internal produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-test-internal.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT plugin produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-plugin.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT sources produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-sources.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT docs produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-docs.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT pom produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-pom.xml
-[debug] 	report for default#simple-rest-scala-build;0.1-SNAPSHOT scala-tool produced in C:\PlayProj\simple-rest-scala\project\target\resolution-cache\reports\default-simple-rest-scala-build-scala-tool.xml
-[debug] 	resolve done (6912ms resolve - 221ms download)
+[debug] :: resolution report :: resolve 36073ms :: artifacts dl 21530ms
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT compile produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-compile.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT runtime produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-runtime.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT test produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-test.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT provided produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-provided.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT optional produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-optional.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT compile-internal produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-compile-internal.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT runtime-internal produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-runtime-internal.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT test-internal produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-test-internal.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT plugin produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-plugin.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT sources produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-sources.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT docs produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-docs.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT pom produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-pom.xml
+[debug] 	report for default#slava-shop-build;0.1-SNAPSHOT scala-tool produced in C:\PlayProj\slava-shop\project\target\resolution-cache\reports\default-slava-shop-build-scala-tool.xml
+[debug] 	resolve done (36073ms resolve - 21530ms download)
 [info] Done updating.

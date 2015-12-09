@@ -7,8 +7,8 @@
           <value>
             <ProjectSettingsEntry>
               <option name="version" value="2.3.7" />
-              <option name="sourceDir" value="C:\PlayProj\simple-rest-scala\app" />
-              <option name="confDir" value="C:\PlayProj\simple-rest-scala\conf" />
+              <option name="sourceDir" value="C:\PlayProj\slava-shop\conf" />
+              <option name="confDir" value="C:\PlayProj\slava-shop\app" />
               <option name="templateImports">
                 <list>
                   <option value="play.api.templates.PlayMagic._" />
@@ -25,7 +25,7 @@
                   <option value="controllers.Assets.Asset" />
                 </list>
               </option>
-              <option name="uri" value="C:\PlayProj\simple-rest-scala" />
+              <option name="uri" value="C:\PlayProj\slava-shop" />
             </ProjectSettingsEntry>
           </value>
         </entry>

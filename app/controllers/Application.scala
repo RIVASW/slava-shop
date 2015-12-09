@@ -13,8 +13,8 @@ object Application extends Controller {
     Action { request =>
       request.session.get("SID").map {sid =>
         Authenticator.getLoginNameBySid(sid)
-          .map{_ => f(request)}.getOrElse(Unauthorized("HTTP/1.1 401 Unauthorized"))
-      } .getOrElse(Unauthorized("HTTP/1.1 401 Unauthorized"))
+          .map{_ => f(request)}.getOrElse(Unauthorized("HTTP/1.1 401 Unauthorized"))}
+        .getOrElse(Unauthorized("HTTP/1.1 401 Unauthorized"))
     }
   }
 
