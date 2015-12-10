@@ -4,7 +4,7 @@
 		module="simple-rest-scala_2.10"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151208132553"
+		publication="20151209225647"
 	>
 		<description>
 		simple-rest-scala
