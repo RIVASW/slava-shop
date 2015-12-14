@@ -1,10 +1,9 @@
 package controllers
 
-import controllers.Application._
-import models.AuthenticationData.AuthenticationData
+import models.AuthenticationData
 import models.{UserSid, User}
 import play.api.libs.json.{JsError, Json}
-import play.api.mvc.{Action, BodyParsers, Controller}
+import play.api.mvc._
 
 /**
  * Created by ivanv_000 on 06.12.2015.

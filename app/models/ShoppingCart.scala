@@ -1,7 +1,5 @@
 package models
 
-import models.ShoppingCartItem.ShoppingCartItem
-
 /**
  * Created by Ivan on 10.12.2015.
  */

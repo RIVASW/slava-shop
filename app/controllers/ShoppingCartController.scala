@@ -7,4 +7,8 @@ import play.api.mvc._
 
 object ShoppingCartController extends Controller{
 
+  def add =  Authenticated{ request =>
+    Ok("Ok")
+  }
+
 }
