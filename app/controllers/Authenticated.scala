@@ -11,7 +11,7 @@ import play.api.libs.json.Json}
  */
 
 object Authenticated extends ActionBuilder[Request]{
-  val unauthenticated = Future.successful(Ok(Json.toJson("Status" -> "Unauthenticated")))
+  val unauthenticated = Future.successful(Ok(Json.toJson("Status" -> "Unauthenticated", "message" -> "You need to login to perform this opeartion")))
 
   def invokeBlock[A](request: Request[A], block: (Request[A]) => Future[Result]) = {
     request.session.get("SID").map {sid =>
