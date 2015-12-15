@@ -6,10 +6,11 @@ import play.api.mvc.Request
  * Created by ivanv_000 on 12.12.2015.
  */
 trait AuthenticatedRequest[+A] extends Request[A] {
-  val loginName: Option[String]
+  val loginName: String
 }
+
 object AuthenticatedRequest {
-  def apply[A](ln: Option[String], r: Request[A]) = new AuthenticatedRequest[A] {
+  def apply[A](ln: String, r: Request[A]) = new AuthenticatedRequest[A] {
     def id = r.id
     def tags = r.tags
     def uri = r.uri

@@ -12,12 +12,13 @@ import models.AuthenticatedRequest
  */
 
 object Authenticated extends ActionBuilder[AuthenticatedRequest]{
+
   val unauthenticated = Future.successful(Ok(Json.toJson("Status" -> "Unauthenticated", "message" -> "You need to login to perform this opeartion")))
 
   def invokeBlock[A](request: Request[A], block: (AuthenticatedRequest[A]) => Future[Result]) = {
     request.session.get("SID").map {sid =>
       Authenticator.getLoginNameBySid(sid)
-        .map{r => block(AuthenticatedRequest[A](Some(r), request))}
+        .map{ln => block(AuthenticatedRequest[A](ln, request))}
         .getOrElse(unauthenticated)}
       .getOrElse(unauthenticated)
   }
