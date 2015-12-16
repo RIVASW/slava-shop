@@ -16,13 +16,13 @@ object Authenticator extends Controller{
     val ad = request.body.validate[AuthenticationData]
     ad.fold(
       errors => {
-        BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors)))
+        BadRequest(Json.obj("status" -> "Error", "message" -> JsError.toFlatJson(errors)))
       },
       ad => {
         User.findByLoginAndPassword(ad.loginName, ad.password)
           .map{ _ => UserSid.addSid(ad.loginName) }
           .map{ sid => Ok(Json.obj("status" -> "OK")).withSession(("SID",sid))}
-          .getOrElse(Ok(Json.obj("status" -> "OK", "message" -> "wrong name or password")))
+          .getOrElse(Ok(Json.obj("status" -> "Error", "message" -> "Wrong name or password")))
       }
     )
   }

@@ -3,7 +3,7 @@ package controllers
 import scala.concurrent.Future
 import play.api.mvc._
 import play.api.mvc.Results._
-import play.api.libs.json.Json
+import play.api.libs.json._
 import models.AuthenticatedRequest
 
 
@@ -13,8 +13,6 @@ import models.AuthenticatedRequest
 
 object Authenticated extends ActionBuilder[AuthenticatedRequest]{
 
-  val unauthenticated = Future.successful(Ok(Json.toJson("Status" -> "Unauthenticated", "message" -> "You need to login to perform this opeartion")))
-
   def invokeBlock[A](request: Request[A], block: (AuthenticatedRequest[A]) => Future[Result]) = {
     request.session.get("SID").map {sid =>
       Authenticator.getLoginNameBySid(sid)
@@ -22,4 +20,7 @@ object Authenticated extends ActionBuilder[AuthenticatedRequest]{
         .getOrElse(unauthenticated)}
       .getOrElse(unauthenticated)
   }
+
+  lazy val unauthenticated = Future.successful(Ok(Json.obj("Status" -> "Unauthenticated",
+    "message" -> "You need to login to perform this opeartion")))
 }

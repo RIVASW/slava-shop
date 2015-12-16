@@ -23,7 +23,13 @@ object ShoppingCartController extends Controller{
     )
   }
 
-  def add =  authenticatedAction(ShoppingCart.add)
-  def remove =  authenticatedAction(ShoppingCart.remove)
+  def add = authenticatedAction(ShoppingCart.add)
 
+  def remove = authenticatedAction(ShoppingCart.remove)
+
+  def get = Authenticated{ request =>
+    ShoppingCart.get(request.loginName).map{ items =>
+      Ok(Json.obj("status" -> "Ok", "items" -> items))
+    }.getOrElse(Ok(Json.obj("status" -> "Ok", "items" -> "[]")))
+  }
 }
